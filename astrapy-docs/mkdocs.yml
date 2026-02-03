@@ -30,7 +30,6 @@ theme:
 plugins:
   - search
   - offline
-  - with-pdf
 
 extra_css:
   - stylesheets/extra.css
