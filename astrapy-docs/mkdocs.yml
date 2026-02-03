@@ -1,0 +1,49 @@
+site_name: AstraPy Documentation
+
+nav:
+  - 主页: index.md
+  - 参考手册: 
+    - 基础模块: references/base.md
+    - 时间模块: references/time.md
+    - 参考系模块: references/frame.md
+    - 数据模块: references/data.md
+    - 数值模块: references/numerics.md
+    - 轨道递推模块: references/propagation.md
+
+theme:
+  name: material
+  palette:
+    primary: custom
+    accent: custom
+  language: zh
+  features:
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - offline
+  - with-pdf
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true

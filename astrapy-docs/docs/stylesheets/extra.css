@@ -1,0 +1,21 @@
+:root > * {
+  --md-primary-fg-color: #ff7096;
+  --md-primary-fg-color--light: #ffb7cd;
+  --md-primary-fg-color--dark: #e91e63;
+
+  --md-accent-fg-color:              #d81b60;
+  --md-accent-fg-color--transparent: #ffe3ec;
+
+  --md-typeset-a-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] {
+  /* 保持色相，只抬亮度 */
+  --md-primary-fg-color:        #ff8fb1;
+  --md-primary-fg-color--light: #ffd1df;
+  --md-primary-fg-color--dark:  #ff5c8a;
+
+  /* accent 仍略深于 primary-dark */
+  --md-accent-fg-color:              #ff4081;
+  --md-accent-fg-color--transparent: #3a1c26;
+}
